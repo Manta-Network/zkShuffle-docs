@@ -1,7 +1,10 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "---": {
+    "type": "separator"
+  },
+  "solidityInterface": "Solidity interface",
+  "SDKInterface": "SDK interface",
   "about": {
     "title": "About",
     "type": "page"

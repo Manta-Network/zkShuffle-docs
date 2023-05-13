@@ -1,23 +1,19 @@
-# Nextra Docs Template 
+## ZK-shuffle SDK docs
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+TODO
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## Quick start
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+```bash
+pnpm install
+```
 
-## Quick Start
+if you don't install pnpm,please install it first
 
-Click the button to clone this repository and deploy it on Vercel:
+```bash
+pnpm install
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+open `pages` file,then write document
 
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+zk-shuffle is developed by https://nextra.site/docs, you can find what you want on this website
