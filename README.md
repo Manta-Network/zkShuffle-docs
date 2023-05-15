@@ -14,6 +14,12 @@ if you don't install pnpm,please install it first
 pnpm install
 ```
 
-open `pages` file,then write document
+then
 
-zk-shuffle is developed by https://nextra.site/docs, you can find what you want on this website
+```bash
+pnpm run dev
+```
+
+open `pages` file , then write document
+
+you can follow this website to write,https://nextra.site/docs/docs-theme/page-configuration
