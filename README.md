@@ -11,7 +11,7 @@ pnpm install
 if you don't install pnpm,please install it first
 
 ```bash
-pnpm install
+npm install -g pnpm
 ```
 
 then
