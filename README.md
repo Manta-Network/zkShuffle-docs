@@ -20,6 +20,8 @@ then
 pnpm run dev
 ```
 
-open `pages` file , then write document
+download `MDX` from VS Code extension
+
+open `pages` file , write document
 
 you can follow this website to write,https://nextra.site/docs/docs-theme/page-configuration
