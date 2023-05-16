@@ -1,6 +1,6 @@
-## Poseidon-Docs SDK docs
+## Poseidon Docs
 
-TODO
+Docs for Poseidon ZK Primitives and Proof Aggregation as Service
 
 ## Quick start
 
