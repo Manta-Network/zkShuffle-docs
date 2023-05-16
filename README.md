@@ -1,4 +1,4 @@
-## ZK-shuffle SDK docs
+## Poseidon-Docs SDK docs
 
 TODO
 

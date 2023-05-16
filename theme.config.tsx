@@ -2,7 +2,7 @@ import React from 'react';
 import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
-  logo: <span>ZK-shuffle</span>,
+  logo: <span>Poseidon-Docs</span>,
   project: {
     link: 'https://github.com/shuding/nextra-docs-template',
   },
@@ -11,14 +11,14 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'ZK-shuffle official document',
+    text: 'Poseidon-Docs official document',
   },
   useNextSeoProps() {
     const defaultSeoProps = {
       description: 'TODO',
       openGraph: {
         description: 'TODO',
-        title: 'zk-shuffle docs',
+        title: 'Poseidon-Docs docs',
         // images: [{ url: 'https://wagmi.sh/og.png' }],
       },
       themeColor: '#ffffff',
@@ -29,7 +29,7 @@ const config: DocsThemeConfig = {
       },
     } as const;
 
-    return { ...defaultSeoProps, titleTemplate: '%s – zk-shuffle' };
+    return { ...defaultSeoProps, titleTemplate: '%s – Poseidon-Docs' };
   },
 };
 
