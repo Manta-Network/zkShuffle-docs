@@ -106,7 +106,7 @@ Suppose there is a simple game zkhilo, already [created](https://github.com/Pose
 ```ts
 interface IZKShuffle {
   joinGame: (gameId: number) => Promise<number>;
-  checkTurn: (gameId: number) => Promise<number>;
+  checkTurn: (gameId: number) => Promise<GameTurn>;
   shuffle: (gameId: number) => Promise<boolean>;
   draw: (gameId: number) => Promise<boolean>;
   open: (gameId: number, cardIds: number[]) => Promise<number[]>;
