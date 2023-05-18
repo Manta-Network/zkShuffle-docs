@@ -106,7 +106,11 @@ Suppose there is a simple game zkhilo, already [created](https://github.com/Pose
 ```ts
 interface IZKShuffle {
   joinGame: (gameId: number) => Promise<number>;
+<<<<<<< HEAD
   checkTurn: (gameId: number) => Promise<GameTurn>;
+=======
+  checkTurn: (gameId: number) => Promise<number>;
+>>>>>>> origin/links
   shuffle: (gameId: number) => Promise<boolean>;
   draw: (gameId: number) => Promise<boolean>;
   open: (gameId: number, cardIds: number[]) => Promise<number[]>;
@@ -114,7 +118,10 @@ interface IZKShuffle {
 
   // helper
   getPlayerId: (gameId: number) => Promise<number>;
+<<<<<<< HEAD
   queryCards: (gameId: number, cardIds : number[]) => Promise<number[]>
+=======
+>>>>>>> origin/links
 }
 ```
 
@@ -186,6 +193,7 @@ interface IZKShuffle {
     - `gameId` : number
   - return :
     - `playerId` : number
+<<<<<<< HEAD
 
 - ### queryCards
   - get card value specified by `cardIds`, from on-chain game `gameId`
@@ -194,3 +202,5 @@ interface IZKShuffle {
     - `cardIds` : number[]
   - return :
     - `cards` : number[]
+=======
+>>>>>>> origin/links
