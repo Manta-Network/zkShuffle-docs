@@ -114,6 +114,7 @@ interface IZKShuffle {
 
   // helper
   getPlayerId: (gameId: number) => Promise<number>;
+  queryCards: (gameId: number, cardIds : number[]) => Promise<number[]>
 }
 ```
 
@@ -185,3 +186,11 @@ interface IZKShuffle {
     - `gameId` : number
   - return :
     - `playerId` : number
+
+- ### queryCards
+  - get card value specified by `cardIds`, from on-chain game `gameId`
+  - parameters :
+    - `gameId` : number
+    - `cardIds` : number[]
+  - return :
+    - `cards` : number[]
