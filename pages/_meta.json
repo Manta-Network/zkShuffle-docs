@@ -7,12 +7,14 @@
   "SDKInterface": "SDK interface",
   "about": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "href": "pdn.xyz",
+    "newWindow": true
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "dev@pdn.xyz",
     "newWindow": true
   }
 }

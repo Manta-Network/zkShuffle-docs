@@ -4,14 +4,14 @@ import Image from 'next/image';
 const config: DocsThemeConfig = {
   logo: <Image src="/images/logo.png" alt="logo" width={40} height={40} />,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/poseidon-zkp',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.gg/vp4A6BUtct',
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Poseidon document',
+    text: 'Poseidon SDK document',
   },
   useNextSeoProps() {
     const defaultSeoProps = {
