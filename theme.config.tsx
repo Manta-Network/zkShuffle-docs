@@ -1,8 +1,8 @@
 import React from 'react';
 import { DocsThemeConfig } from 'nextra-theme-docs';
-
+import Image from 'next/image';
 const config: DocsThemeConfig = {
-  logo: <span>Poseidon-Docs</span>,
+  logo: <Image src="/images/logo.png" alt="logo" width={40} height={40} />,
   project: {
     link: 'https://github.com/shuding/nextra-docs-template',
   },
@@ -11,7 +11,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Poseidon-Docs official document',
+    text: 'Poseidon document',
   },
   useNextSeoProps() {
     const defaultSeoProps = {
