@@ -1,17 +1,27 @@
 import React from 'react';
 import { DocsThemeConfig } from 'nextra-theme-docs';
 import Image from 'next/image';
+
+
+const github = 'https://github.com/poseidon-zkp'
+
+
 const config: DocsThemeConfig = {
   logo: <Image src="/images/logo.png" alt="logo" width={40} height={40} />,
   project: {
-    link: 'https://github.com/poseidon-zkp',
+    link: github,
   },
   chat: {
     link: 'https://discord.gg/vp4A6BUtct',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: `https://github.com/Poseidon-ZKP/Poseidon-docs`,
   footer: {
     text: 'Poseidon SDK document',
+  },
+  editLink: {
+    text() {
+      return <></>
+    },
   },
   useNextSeoProps() {
     const defaultSeoProps = {
