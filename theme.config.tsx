@@ -23,6 +23,13 @@ const config: DocsThemeConfig = {
       return <></>
     },
   },
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta httpEquiv="Content-Language" content="en" />
+      <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
+    </>
+  ),
   useNextSeoProps() {
     const defaultSeoProps = {
       description: 'TODO',
