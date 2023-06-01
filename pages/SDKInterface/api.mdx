@@ -1,0 +1,98 @@
+---
+title: 'zkShuffle APIs'
+description: 'zkShuffle SDK desc'
+---
+
+# Interfaces(Typescript)
+
+```ts
+interface IZKShuffle {
+  joinGame: (gameId: number) => Promise<number>;
+  checkTurn: (gameId: number) => Promise<GameTurn>;
+  shuffle: (gameId: number) => Promise<boolean>;
+  draw: (gameId: number) => Promise<boolean>;
+  open: (gameId: number, cardIds: number[]) => Promise<number[]>;
+  openOffchain: (gameId: number, cardIds: number[]) => Promise<number[]>;
+
+  // helper
+  getPlayerId: (gameId: number) => Promise<number>;
+  queryCards: (gameId: number, cardIds : number[]) => Promise<number[]>
+}
+```
+
+- ### [joinGame](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#LL135C20-L135C20)
+
+  - join the game specified by `gameId`, and get an onchain per game's `playerId`
+  - parameters :
+    - `gameId` : number
+  - return :
+    - `playerId` : number
+
+- ### [checkTurn](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#L147)
+
+  - Query player's current turn in game `gameId`, specified by `GameTurn`
+
+  ```typescript
+  enum GameTurn {
+    NOP, // Not Your Turn
+    Shuffle, // Shuffle Turn
+    Deal, // Deal Decrypt Turn
+    Open, // Open Card
+    Error, // Game Error
+    Complete, // Game End
+  }
+  ```
+
+  - parameters:
+    - `gameId` : number
+  - return :
+    - `turn` : `GameTurn`
+
+- ### [shuffle](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#L242)
+
+  - shuffle card in game `gameId`, and submit a proof on-chain, return true is shuffle successs, otherwise false
+  - parameters:
+    - `gameId` : number
+  - return :
+    - `result` : boolean
+
+- ### [draw](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#L281)
+
+  - draw card in game `gameId`, and submit a proof on-chain, return true is draw successs, otherwise false
+  - parameters:
+    - `gameId` : number
+  - return :
+    - `result` : boolean
+
+- ### [open](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#L373)
+
+  - open cards specified by `cardIds`, and submit a proof on-chain, return card's original value if open successs, otherwise return -1 for the card.
+  - parameters::
+    - `gameId` : number
+    - `cardIds` : number[]
+  - return :
+    - `cards` : number[]
+
+- ### [openOffchain](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#L348)
+
+  - open cards specified by `cardIds`, return card's original value if open successs, otherwise return -1 for the card.
+  - parameters:
+    - `gameId` : number
+    - `cardIds` : number[]
+  - return :
+    - `cards` : number[]
+
+- ### [getPlayerId](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#L142)
+  - get player's id from onchain game `gameId`
+  - parameters :
+    - `gameId` : number
+  - return :
+    - `playerId` : number
+
+- ### [queryCards](https://github.com/Poseidon-ZKP/Poseidon-ZKP/blob/599283e14cb5638423bb5625be04a6e26f21b8a7/packages/jssdk/shuffle/zkShuffle.ts#L142)
+  - get card value specified by `cardIds`, from on-chain game `gameId`
+  - parameters :
+    - `gameId` : number
+    - `cardIds` : number[]
+  - return :
+    - `cards` : number[]
