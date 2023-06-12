@@ -3,18 +3,13 @@
   "---": {
     "type": "separator"
   },
-  "solidityInterface": "Solidity interface",
-  "SDKInterface": "SDK interface",
+  "contractInterface": "Contract Interface",
+  "typescriptSDK": "Typescript SDK",
+  "Tutorial": "Tutorial",
   "about": {
     "title": "About",
     "type": "page",
-    "href": "pdn.xyz",
-    "newWindow": true
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "dev@pdn.xyz",
+    "href": "https://pdn.xyz/",
     "newWindow": true
   }
 }
