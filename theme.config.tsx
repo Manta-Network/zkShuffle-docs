@@ -3,7 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs';
 import Image from 'next/image';
 
 
-const github = 'https://github.com/poseidon-zkp'
+const github = 'https://github.com/Poseidon-ZKP'
 
 
 const config: DocsThemeConfig = {

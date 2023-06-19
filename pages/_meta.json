@@ -1,11 +1,17 @@
 {
-  "index": "zkShuffle Documentation",
-  "---": {
-    "type": "separator"
+  "index": {
+    "title": "Introduction",
+    "type": "page",
+    "display": "hidden"
   },
-  "contractInterface": "Contract Interface",
-  "typescriptSDK": "Typescript SDK",
-  "Tutorial": "Tutorial",
+  "home": {
+    "title": "Main Components",
+    "type": "page"
+  },
+  "examples":{
+    "title": "Examples",
+    "type": "page"
+  },
   "about": {
     "title": "About",
     "type": "page",
