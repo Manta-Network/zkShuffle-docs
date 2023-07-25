@@ -1,6 +1,6 @@
-## Poseidon Docs
+## zkShuffle Docs
 
-Docs for Poseidon ZK Primitives and Proof Aggregation as Service
+Docs for zkShuffle ZK Primitives and Proof Aggregation as Service
 
 ## Quick start
 

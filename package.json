@@ -1,7 +1,7 @@
 {
-  "name": "Poseidon-Docs",
+  "name": "zkShuffle-Docs",
   "version": "0.0.1",
-  "description": "Poseidon-Docs sdk documents",
+  "description": "zkShuffle-Docs sdk documents",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

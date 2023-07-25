@@ -14,7 +14,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: `https://github.com/Manta-Network/zkShuffle-docs`,
   footer: {
-    text: "Poseidon SDK document",
+    text: "zkShuffle SDK document",
   },
   editLink: {
     text() {
@@ -33,7 +33,7 @@ const config: DocsThemeConfig = {
       description: "TODO",
       openGraph: {
         description: "TODO",
-        title: "Poseidon-Docs docs",
+        title: "zkShuffle-Docs docs",
         // images: [{ url: 'https://wagmi.sh/og.png' }],
       },
       themeColor: "#ffffff",
@@ -44,7 +44,7 @@ const config: DocsThemeConfig = {
       },
     } as const;
 
-    return { ...defaultSeoProps, titleTemplate: "%s – Poseidon-Docs" };
+    return { ...defaultSeoProps, titleTemplate: "%s – zkShuffle-Docs" };
   },
 };
 
