@@ -1,16 +1,18 @@
 ---
-title: 'Magic World'
-description: 'zkShuffle Game'
+title: "Magic World"
+description: "zkShuffle Game"
 ---
 
 # Overview
-*Magic World* is 1-vs-1 card game similar to the Hearth Stone, building by zkShuffle.
+
+_Magic World_ is 1-vs-1 card game similar to the Hearth Stone, building by zkShuffle.
 Please check the demo video [here](https://drive.google.com/file/d/1d9KfJxbwipyffXdVylzlvbfQ-bTQ8rpT/view?usp=sharing).
 Deployed on Arbitrum Goerli Testnet, this game is playable via the the following link:
-`https://magic-world.vercel.app/?creator=ADDR1&joiner=ADDR2`.
+`magic-world-pq9kvykom-manta-fullstack.vercel.app/?creator=ADDRESS1&joiner=ADDRESS2`.
 Do remember to replace `ADDR1` and `ADDR2` with the Ethereum address of creator and joiner.
 
 # Game rules
+
 Two players, creator and joiner, fight against each other, following the rules:
 
 - The initial health of the two players is 30.
@@ -18,4 +20,3 @@ Two players, creator and joiner, fight against each other, following the rules:
 - When the game starts, each player randomly draws 10 out of 30 cards, composed by 10 Wizards, 10 Warriors, and 10 Tanks.
 - During the game, players take turns to show cards where each card has two attributes: attack and defense. Attack will cause damage to the opponent player, defense will provide a one-time shield for player.
 - The game will last for ten rounds. When the player's health drops to 0, the player loses. If none of the players' health drop to 0, the game ended in a draw.
-
