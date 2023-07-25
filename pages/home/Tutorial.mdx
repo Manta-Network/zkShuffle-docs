@@ -1,8 +1,7 @@
 ---
-title: 'Tourial'
-description: 'zkShuffle SDK Tourial Step-by-Step'
+title: "Tourial"
+description: "zkShuffle SDK Tourial Step-by-Step"
 ---
-
 
 # Overview
 
@@ -98,13 +97,11 @@ contract Hilo is IBaseGame {
 }
 ```
 
-For the complete contract code, please see [[hilo]](https://github.com/Poseidon-ZKP/zkShuffle/blob/main/packages/contracts/contracts/games/hilo/Hilo.sol).
+For the complete contract code, please see [[hilo]](https://github.com/Manta-Network/zkShuffle-docs/zkShuffle/blob/main/packages/contracts/contracts/games/hilo/Hilo.sol).
 
 # Front end with SDK
 
 Developers can interact with shuffleManager contract using zkShuffle SDK. We provide the following examples.
-
-
 
 - **step 1** : Creates a zkShuffle instance, with given shuffleManager contract address, and player signer
 
@@ -144,39 +141,39 @@ Developers can interact with shuffleManager contract using zkShuffle SDK. We pro
 
 We provide an end-to-end front-end code as follows:
 
-  ```ts
-  // create zkShuffle instance
-  const player = await zkShuffle.create(SM, owner);
+```ts
+// create zkShuffle instance
+const player = await zkShuffle.create(SM, owner);
 
-  // join game
-  const playerIdx = await player.joinGame(gameId);
+// join game
+const playerIdx = await player.joinGame(gameId);
 
-  // play game
-  let turn;
-  while (turn != GameTurn.Complete) {
-    turn = await player.checkTurn(gameId);
+// play game
+let turn;
+while (turn != GameTurn.Complete) {
+  turn = await player.checkTurn(gameId);
 
-    if (turn != NOP) {
-      switch (turn) {
-        case GameTurn.Shuffle:
-          await player.shuffle(gameId);
-          break;
-        case GameTurn.Deal:
-          await player.draw(gameId);
-          break;
-        case GameTurn.Open:
-          const cards = await player.open(gameId, cardIds);
-          break;
-        case GameTurn.Complete:
-          break;
-        case GameTurn.Error:
-          break;
-        default:
-          console.log('err turn ', turn);
-          exit(-1);
-      }
+  if (turn != NOP) {
+    switch (turn) {
+      case GameTurn.Shuffle:
+        await player.shuffle(gameId);
+        break;
+      case GameTurn.Deal:
+        await player.draw(gameId);
+        break;
+      case GameTurn.Open:
+        const cards = await player.open(gameId, cardIds);
+        break;
+      case GameTurn.Complete:
+        break;
+      case GameTurn.Error:
+        break;
+      default:
+        console.log("err turn ", turn);
+        exit(-1);
     }
   }
-  ```
+}
+```
 
-For the complete end-to-end test, please see [[e2e]](https://github.com/Poseidon-ZKP/zkShuffle/blob/main/packages/contracts/tests/e2e.ts).
+For the complete end-to-end test, please see [[e2e]](https://github.com/Manta-Network/zkShuffle-docs/zkShuffle/blob/main/packages/contracts/tests/e2e.ts).

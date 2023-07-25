@@ -1,10 +1,8 @@
-import React from 'react';
-import { DocsThemeConfig } from 'nextra-theme-docs';
-import Image from 'next/image';
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import Image from "next/image";
 
-
-const github = 'https://github.com/Poseidon-ZKP'
-
+const github = "https://github.com/Manta-Network/zkShuffle-docs";
 
 const config: DocsThemeConfig = {
   logo: <Image src="/images/logo.png" alt="logo" width={40} height={40} />,
@@ -12,15 +10,15 @@ const config: DocsThemeConfig = {
     link: github,
   },
   chat: {
-    link: 'https://discord.gg/vp4A6BUtct',
+    link: "https://discord.gg/vp4A6BUtct",
   },
-  docsRepositoryBase: `https://github.com/Poseidon-ZKP/Poseidon-docs`,
+  docsRepositoryBase: `https://github.com/Manta-Network/zkShuffle-docs`,
   footer: {
-    text: 'Poseidon SDK document',
+    text: "Poseidon SDK document",
   },
   editLink: {
     text() {
-      return <></>
+      return <></>;
     },
   },
   head: (
@@ -32,21 +30,21 @@ const config: DocsThemeConfig = {
   ),
   useNextSeoProps() {
     const defaultSeoProps = {
-      description: 'TODO',
+      description: "TODO",
       openGraph: {
-        description: 'TODO',
-        title: 'Poseidon-Docs docs',
+        description: "TODO",
+        title: "Poseidon-Docs docs",
         // images: [{ url: 'https://wagmi.sh/og.png' }],
       },
-      themeColor: '#ffffff',
+      themeColor: "#ffffff",
       twitter: {
-        cardType: 'TODO',
-        handle: 'TODO',
-        site: 'TODO',
+        cardType: "TODO",
+        handle: "TODO",
+        site: "TODO",
       },
     } as const;
 
-    return { ...defaultSeoProps, titleTemplate: '%s – Poseidon-Docs' };
+    return { ...defaultSeoProps, titleTemplate: "%s – Poseidon-Docs" };
   },
 };
 

@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Poseidon-ZKP/ZKP-docs"
+    "url": "git+https://github.com/Manta-Network/zkShuffle-docs/ZKP-docs"
   },
   "author": "Shu Ding <g@shud.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Poseidon-ZKP/ZKP-docs/issues"
+    "url": "https://github.com/Manta-Network/zkShuffle-docs/ZKP-docs/issues"
   },
-  "homepage": "https://github.com/Poseidon-ZKP/ZKP-docs#readme",
+  "homepage": "https://github.com/Manta-Network/zkShuffle-docs/ZKP-docs#readme",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",
